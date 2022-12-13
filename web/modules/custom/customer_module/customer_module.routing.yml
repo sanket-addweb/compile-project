@@ -1,0 +1,41 @@
+customer_module.customerForm:
+  path: '/customer-form'
+  defaults: 
+    _form: '\Drupal\customer_module\Form\CustomerForm'
+    _title: "Customer Form"
+  requirements:
+    _permission: 'access content'
+
+customer_module.customerForm1:
+  path: '/customer-form-controller'
+  defaults: 
+    # _form: '\Drupal\customer_module\Form\CustomerForm'
+    _controller: '\Drupal\customer_module\Controller\CustomerController::customerForm1'
+    _title: "Customer Form"
+  requirements:
+    _permission: 'access content'
+
+customer_module.getCustomer:
+  path: '/get-customer'
+  defaults:
+    _controller: '\Drupal\customer_module\Controller\CustomerController::getCustomer'
+    _title: 'Customer Lists'
+  requirements:
+    _permission: 'access content'
+
+customer_module.editCustomer:
+  path: '/edit-customer/{id}'
+  defaults:
+    _form: 'Drupal\customer_module\Form\EditCustomerForm'
+    _title: 'Edit Customer Detail'
+  requirements:
+    _permission: 'access content'
+
+customer_module.deleteCustomer:
+  path: '/delete-customer/{id}'
+  defaults:
+    _controller: 'Drupal\customer_module\Controller\CustomerController::deleteCustomer'
+  requirements:
+    _permission: 'access content'
+
+    

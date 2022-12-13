@@ -1,0 +1,20 @@
+customer_module.customerForm1:
+  title: 'Customer Detail Form'
+  description: 'Fill the information for more filter product'
+  route_name: customer_module.customerForm1
+  weight: 8
+  menu_name: main
+
+customer_module.getCustomer:
+  title: 'Customer Lists'
+  description: 'See Customers'
+  route_name: 'customer_module.getCustomer'
+  weight: 9
+  menu_name: main
+
+# student_details.studentForm1:
+#   title: 'Students Details Form'
+#   description: 'Here you can fill students information'
+#   route_name: students_module.studentForm1
+#   weight: 8
+#   menu_name: main 

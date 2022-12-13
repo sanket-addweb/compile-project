@@ -1,0 +1,13 @@
+<?php
+
+function customer_module_theme($existing, $type, $theme, $path) {
+  return [
+    'customer-form' => [
+      'variables' => [
+        'formData' => NULL,
+        'title' => NULL,
+      ],
+    ],
+  ];
+
+}

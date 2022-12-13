@@ -1,0 +1,6 @@
+# services:
+#   customer_module.data_handler:
+#     class: \Drupal\customer_module\Service\LoadData
+#     arguments: ['@database'] 
+
+    

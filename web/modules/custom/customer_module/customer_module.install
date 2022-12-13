@@ -1,0 +1,57 @@
+<?php
+
+function customer_module_schema() {
+    $schema['customer'] = array(
+        'description' => 'The base table for customer.',
+        'fields' => array(
+            
+            'id' => array(
+                'description' => 'ID',
+                'type' => 'serial',
+                'length' => 11,
+                'not null' => TRUE,
+            ),
+
+            'name' => array(
+                'description' => 'Name',
+                'type' => 'varchar_ascii',
+                'length' => 100,
+                'not null' => TRUE,
+                'default' => '',
+            ), 
+            
+            'email' => [
+                'description' => 'Email',
+                'type' => 'varchar_ascii',
+                'length' => 60,
+                'not null' => TRUE,
+                'default' => '',
+            ],
+
+            'phone' => [
+                'description' => 'Phone',
+                'type' => 'int',
+                'length' => 11,
+                'not null' => TRUE,
+                'default' => 0,
+            ],
+
+            'address' => [
+                'description' => 'Address',
+                'type' => 'text',
+                'not null' => FALSE,
+            ],
+        ),
+        
+        // 'unique keys' => array(
+        //     'nid_vid' => array('nid', 'vid'),
+        //     'vid'     => array('vid')
+        //     ),
+
+        'primary key' => array(
+            'id',
+        ),
+    );
+    return $schema;
+}
+?>
