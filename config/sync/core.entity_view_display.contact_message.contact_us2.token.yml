@@ -1,0 +1,60 @@
+uuid: 968ff1e3-b25d-421d-8273-1af1f452ebed
+langcode: en
+status: false
+dependencies:
+  config:
+    - contact.form.contact_us2
+    - core.entity_view_mode.contact_message.token
+    - field.field.contact_message.contact_us2.field_email
+    - field.field.contact_message.contact_us2.field_name
+id: contact_message.contact_us2.token
+targetEntityType: contact_message
+bundle: contact_us2
+mode: token
+content:
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  mail:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: -2
+    region: content
+  message:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -3
+    region: content
+  subject:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -1
+    region: content
+hidden: {  }

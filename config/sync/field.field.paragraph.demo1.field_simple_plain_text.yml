@@ -1,0 +1,19 @@
+uuid: 237464b9-37ed-4efe-a603-210b4f52499b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_simple_plain_text
+    - paragraphs.paragraphs_type.demo1
+id: paragraph.demo1.field_simple_plain_text
+field_name: field_simple_plain_text
+entity_type: paragraph
+bundle: demo1
+label: 'simple plain text'
+description: 'Simple plain text here'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

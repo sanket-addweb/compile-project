@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for cache_api_example module.
+ */
+
+
+// For hook_ENTITY_TYPE_presave.
+use Drupal\Core\Cache\Cache;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+* Implements hook_ENTITY_TYPE_presave().
+*
+* Invalid cache tags for node lists.
+*/
+
+// function cache_api_example_node_presave(EntityInterface $entity) {
+// 	$cache_tag = 'node:type:' . $entity->getType(); 
+// 	// dump($cache_tag);//works fine
+// 	// exit;
+// 	Cache::invalidateTags([$cache_tag]); 
+// } 
+
+// function cache_api_example_node_presave(NodeInterface $node) {
+// 	$tags = [];
+// 	dump($node);
+// 	// exit;
+// 	if ($node->hasField('field_category')) {
+// 	  foreach ($node->get('field_category') as $item) {
+// 		$tags[] = 'mysite:node:category:' . $item->target_id;
+// 	  }
+// 	}
+// 	if ($tags) {
+// 	  Cache::invalidateTags($tags);
+// 	}
+// }

@@ -1,0 +1,19 @@
+uuid: 24fb2808-c2d8-4c19-855c-ab645a5ffa69
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_us2
+    - field.storage.contact_message.field_email
+id: contact_message.contact_us2.field_email
+field_name: field_email
+entity_type: contact_message
+bundle: contact_us2
+label: Email
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

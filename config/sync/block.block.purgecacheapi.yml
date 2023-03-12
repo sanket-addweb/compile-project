@@ -1,0 +1,20 @@
+uuid: fb8a4bea-d630-4491-8f85-8f675bb892a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - customer_module
+  theme:
+    - bartik
+id: purgecacheapi
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: purge_block_cache
+settings:
+  id: purge_block_cache
+  label: 'Purge cache api'
+  label_display: visible
+  provider: customer_module
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: d5aed445-f49d-4e1c-9153-5035b9c5e141
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.quick-link
+  module:
+    - system
+  theme:
+    - business_responsive_theme
+id: quicklink
+theme: business_responsive_theme
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'system_menu_block:quick-link'
+settings:
+  id: 'system_menu_block:quick-link'
+  label: 'Quick link'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

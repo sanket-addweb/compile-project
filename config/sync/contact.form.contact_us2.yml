@@ -1,0 +1,12 @@
+uuid: 9c009e22-40c2-4051-b515-3dcb5239287a
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us2
+label: 'Contact Us2'
+recipients:
+  - sanketprajapati0209@gmail.com
+reply: ''
+weight: 0
+message: 'Your message sent successfully. We will contact you shortly.'
+redirect: ''

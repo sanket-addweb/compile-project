@@ -1,0 +1,18 @@
+uuid: 9e691314-9c37-4738-b155-89100c74e2e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.paragraph_content_type
+id: node.paragraph_content_type.title
+field_name: title
+entity_type: node
+bundle: paragraph_content_type
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

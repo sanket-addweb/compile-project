@@ -1,0 +1,38 @@
+uuid: d238606e-3640-473e-9005-a0b282090f63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photo_
+    - node.type.paragraph_content_type
+  module:
+    - image
+id: node.paragraph_content_type.field_photo_
+field_name: field_photo_
+entity_type: node
+bundle: paragraph_content_type
+label: 'Photo '
+description: "This is by content type field not by paragraph field\r\nso if you are repeate demo1(paragraph type) then it repeate demo1 and it's field"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '600 KB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

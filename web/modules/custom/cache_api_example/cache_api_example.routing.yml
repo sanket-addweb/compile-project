@@ -1,0 +1,15 @@
+cache_api_example.example:
+  path: '/cache-api-example/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\cache_api_example\Controller\CacheApiExampleController::build'
+  requirements:
+    _permission: 'access content'
+
+cache_api_example.settings_form:
+  path: '/admin/config/system/cache-api-example'
+  defaults:
+    _title: 'cache_api_example settings'
+    _form: 'Drupal\cache_api_example\Form\SettingsForm'
+  requirements:
+    _permission: 'administer cache_api_example configuration'

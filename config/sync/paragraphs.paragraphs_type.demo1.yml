@@ -1,0 +1,10 @@
+uuid: f76fe8bd-67f1-4a42-98c6-e29282d04957
+langcode: en
+status: true
+dependencies: {  }
+id: demo1
+label: demo1
+icon_uuid: null
+icon_default: null
+description: 'This is para type'
+behavior_plugins: {  }

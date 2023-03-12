@@ -1,0 +1,5 @@
+name: cache_api_example
+type: module
+description: This provide cache api and it&#039;s operation
+package: Custom module
+core_version_requirement: ^9 || ^10
