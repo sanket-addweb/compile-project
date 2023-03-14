@@ -1,0 +1,20 @@
+uuid: c75285c2-d932-4e45-b5ea-c5941fb84b00
+langcode: en
+status: true
+dependencies:
+  module:
+    - cache_api_example
+  theme:
+    - bartik
+id: examplenumber
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: cache_api_example_example
+settings:
+  id: cache_api_example_example
+  label: 'Example number'
+  label_display: '0'
+  provider: cache_api_example
+visibility: {  }
